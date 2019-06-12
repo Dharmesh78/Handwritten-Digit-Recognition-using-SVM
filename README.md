@@ -1,21 +1,26 @@
 # Handwritten-Digit-Recognition-using-SVM
                                                    1. Introduction
 Hand writing recognition of characters has been around since the 1980s.The task of handwritten digit recognition, using a classifier, has great importance and use such as – online handwriting recognition on computer tablets, recognize zip codes on mail for postal mail sorting, processing bank check amounts, numeric entries in forms filled up by hand (for example ‐ tax forms) and so on. There are different challenges faced while attempting to solve this problem. The handwritten digits are not always of the same size, thickness, or orientation and position relative to the margins. Our goal was to implement a pattern classification method to recognize the handwritten digits provided in the MNIST dataset of images of hand written digits (0 ‐ 9). The data set used for our application is composed of 300 training images and 300 testing images, and is a subset of the MNIST data set (originally composed of 60,000 training images and 10,000 testing images). Each image is a 28 x 28 grayscale (0 ‐ 255) labeled representation of an individual digit. The general problem we predicted we would face in this digit classification problem was the similarity between the digits like 1 and 7, 5 and 6, 3 and 8, 9 and 8 etc. Finally the uniqueness and variety in the handwriting of different individuals also influences the formation and appearance of the digits.
-Digit recognition system is the working of a machine to train itself or recognizing the digits from different sources like emails, bank cheque, papers, images, etc. and in different real-world scenarios for online handwriting recognition on computer tablets or system, recognize number plates of vehicles, processing bank cheque amounts, numeric entries in forms filled up by hand  and so on. 
-Problems with handwritten digits
+
+Problems with handwritten digits:
+
 The handwritten digits are not always of the same size, width, orientation and justified to margins as they differ from writing of person to person, so the general problem would be while classifying the digits due to the similarity between digits such as 1 and 7, 5 and 6, 3 and 8, 2 and 5, 2 and 7, etc. This problem is faced more when many people write a single digit with a variety of different handwritings. Lastly, the uniqueness and variety in the handwriting of different individuals also influence the formation and appearance of the digits. Now we introduce the concepts and algorithms of deep learning and machine learning.
-Image is one of the important means for information to express, store and transmit. Along with the rapid development of the computer technology and digital image processing technology, digital image classification and recognition techniques are required urgently. Image recognition, widely applied to handwriting recognition, face recognition, vehicle license plate recognition and so on, is the use of AI technology to enable computers to recognize information in images. For instance, the methods to recognize handwritten date, account digit and other numeric information are the key technique of image recognition. Support vector machine (SVM) is a learning method based on statistical learning theories. Basing on the principle of structural risk minimization, SVM can improve the generalization ability of the learning machine as much as possible. Even the decision rules obtained from limited training samples can still get small errors for independent test datasets. In recent years, SVM has been widely used in pattern recognition, regression analysis and feature extraction. Vapnik found that different kernel functions had little effect on SVM performance. The key factors affecting SVM performance are kernel function parameters and penalty coefficient. Therefore, the study of kernel function parameters and penalty coefficients is an important field to improve the performance of machine learning. A machine learning model of handwritten numeric information based on SVC is established in this paper. Then the influence of training number, kernel function and penalty coefficients parameters on the prediction model is analysed, providing reference for improving efficiency and accuracy of machine learning model.
+
+The algorithm used here is Support vector machine (SVM) which  is a learning method based on statistical learning theories. Basing on the principle of structural risk minimization, SVM can improve the generalization ability of the learning machine as much as possible. Even the decision rules obtained from limited training samples can still get small errors for independent test datasets. In recent years, SVM has been widely used in pattern recognition, regression analysis and feature extraction. 
 
 
 
 1.2  Hardware Requirements
+
 Processor – Intel i5.
 Hard Disk – 500 GB.
 Memory – 4 GB.
+
 1.3 Software Requirements
    1.3.1 PyCharm
 PyCharm is the most popular IDE for Python, and includes great features such as excellent code completion and inspection with advanced debugger and support for web programming and various frameworks. As any other IDE editor, it supports basic features like bookmarks, breakpoints, syntax highlighting, code completion, zooming, folding code blocks, etc. There are, however, plenty of advanced features like macros, highlighted TODO items, code analysis, intention actions, intelligent and fast navigation, and a lot more.
 PyCharm is created by Czech company, Jet brains which focusses on creating integrated development environment for various web development languages like JavaScript and PHP.
+
  1.3.2 Qt Designer
 
 Qt Designer is the Qt tool for designing and building graphical user interfaces (GUIs) with Qt Widgets. You can compose and customize your windows or dialogs in a what-you-see-is-what-you-get (WYSIWYG) manner, and test them using different styles and resolutions.
@@ -44,19 +49,21 @@ PyQt5 supports the Windows, Linux, UNIX, Android, macOS and iOS platforms. PyQt 
 
 
    
-Skicit-learn:
+2.2.2 Skicit-learn:
 Scikit-learn (formerly scikits.learn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
 The scikit-learn project started as scikits.learn, a Google Summer of Code project by David Cournapeau. Its name stems from the notion that it is a "SciKit" (SciPy Toolkit), a separately-developed and distributed third-party extension to SciPy. The original codebase was later rewritten by other developers. In 2010 Fabian Pedregosa, Gael Varoquaux, Alexandre Gramfort and Vincent Michel, all from INRIA took leadership of the project and made the first public release on February the 1st 2010.Of the various scikits, scikit-learn as well as scikit-image were described as "well-maintained and popular" in November 2012.
 Scikit-learn is largely written in Python, with some core algorithms written in Cython to achieve performance. Support vector machines are implemented by a Cython wrapper around LIBSVM; logistic regression and linear support vector machines by a similar wrapper around LIBLINEAR. 
 
-NumPy:
+2.2.3 NumPy:
 NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. The ancestor of NumPy, Numeric, was originally created by Jim Hugunin with contributions from several other developers. In 2005, Travis Oliphant created NumPy by incorporating features of the competing Numarray into Numeric, with extensive modifications. NumPy is open-source software and has many contributors. 
 
-   2.2.4     OpenCV:
+2.2.4     OpenCV:
+
 OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. Being a BSD-licensed product, OpenCV makes it easy for businesses to utilize and modify the code. The library has more than 2500 optimized algorithms, which includes a comprehensive set of both classic and state-of-the-art computer vision and machine learning algorithms. These algorithms can be used to detect and recognize faces, identify objects, classify human actions in videos, track camera movements, track moving objects, extract 3D models of objects, produce 3D point clouds from stereo cameras, stitch images together to produce a high resolution image of an entire scene, find similar images from an image database, remove red eyes from images taken using flash, follow eye movements, recognize scenery and establish markers to overlay it with augmented reality, etc. OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 14 million. The library is used extensively in companies, research groups and by governmental bodies. Along with well-established companies like Google, Yahoo, Microsoft, Intel, IBM, Sony, Honda, Toyota that employ the library, there are many startups such as Applied Minds, VideoSurf, and Zeitera, that make extensive use of OpenCV.  OpenCV’s deployed uses span the range from stitching streetview images together, detecting intrusions in surveillance video in Israel, monitoring mine equipment in China, helping robots navigate and pick up objects at Willow Garage, detection of swimming pool drowning accidents in Europe, running interactive art in Spain and New York, checking runways for debris in Turkey, inspecting labels on products in factories around the world on to rapid face detection in Japan.
 It has C++, Python, Java and MATLAB interfaces and supports Windows, Linux, Android and Mac OS. OpenCV leans mostly towards real-time vision applications and takes advantage of MMX and SSE instructions when available. A full-featured CUDA and OenCL interfaces are being actively developed right now. There are over 500 algorithms and about 10 times as many functions that compose or support those algorithms. OpenCV is written natively in C++ and has a templated interface that works seamlessly with STL containers.
 
 USER INTERFACE REQUIREMENT
+
 PyQT5 Image Viewer: selected image will be displayed here, in order to get predicted.
 
 Text Box: the predicted digit will be displayed in a textbox widget of android application.
@@ -87,7 +94,7 @@ Division of the MNIST took place by 30,000 samples from SD-3 and 30,000 samples 
 
 
     
-                                  4.   SYSTEM DESIGN AND PROJECT IMPLEMENTATION
+                                  4.  SYSTEM DESIGN AND PROJECT IMPLEMENTATION
 
 
 
@@ -119,8 +126,10 @@ Calculating the contours in the image and then calculating the bounding box for 
  Then resize each bounding square to a size of 28×28 and dilate it.
  Calculate the HOG features for each bounding square.
 Predict the image using trained classifier, HOG feature vector for each bounding square should be of the same size for which the classifier was trained.
-CHAPTER 6
-CONCLUSION AND FUTURE SCOPE
+
+
+                                             6. CONCLUSION AND FUTURE SCOPE
+                                          
 We presented a system for dealing with such problem. The system started by acquiring an image containing digits, this image was digitized using some optical devices and after applying some enhancements and modifications to the digits within the image it can be recognized using feed forward back propagation algorithm. The studies were conducted on the Arabic handwriting digits of 10 independent writers who contributed a total of 1300 isolated Arabic digits these digits divided into two data sets: Training 1000 digits, testing 300 digits. An overall accuracy meet using this system was 65% on the test data set used.
 
 We developed a system for Arabic handwritten recognition. And we efficiently choose a segmentation method to fit our demands. Our system successfully designs and implement a neural network which efficiently go without demands, after that the system are able to understand the Arabic numbers that was written manually by users.
